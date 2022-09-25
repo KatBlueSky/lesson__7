@@ -1,0 +1,486 @@
+/* &display=swap */
+@import "reset.css";
+/* ================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,700&display=swap");
+/* 
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+} */
+/* ================================================================ */
+
+[class*="__container"]{
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 55px;
+	text-align: center;
+	font-weight: 400;
+	margin: 30px 0px;
+	padding: 20px 40px 20px 0px;
+	letter-spacing: 2px;
+	background-color: #9db4c3;
+	letter-spacing: 5px;
+}
+
+
+body {
+	font-size: 25px;
+	font-family: Ubuntu;
+	color: #696969;
+}
+
+
+
+.text,
+.text-block-rgb,
+.text-block-rgba,
+.text-block-opacity {
+	color: #cf4040;
+	padding: 15px 30px 15px 15px;
+}
+.color-block {
+	background-color: #edfd73;
+}
+.color-block-rgb {
+	background-color:rgb(235, 75, 26);
+	color: #ffffff;
+}
+
+.color-block-rgba {
+	background-color: rgba(176, 110, 234,1);
+}
+.color-block-opacity {
+	/* Экспериментб текст тоже становиться прозрачным*/
+	opacity: 0.2;
+	background-color: rgb(225, 93, 53);
+}
+
+.patern {
+	background-image: url("../img/italy-pattern.jpg");
+	background-repeat: repeat-x;
+/* background-repeat: repeat-y;  */
+}
+
+
+.image-title {
+	color: rgba(255, 255, 255, 0.4);
+	text-align: justify;
+	padding: 15px;
+	line-height: 1.5;
+	background-image: url("../img/foto-2.jpg"); 
+	margin: 0px 0px 50px 0px;
+	/*Позіціонування зображення*/
+	background-position: left top;
+	background-position:  top;
+	background-position:  right;
+	background-position:  right top;
+	background-position: -10% 20%;
+	background-position: 10px 20px;
+	background-position: 0 0;
+	background-position: center;
+
+/* Розмір зображення */
+background-size: auto auto;
+background-size: auto 200px;
+
+background-size: auto 50%;
+
+/*Картинка разтянута по найменьшим размерам висоти або  ширини */
+background-size: contain;
+
+/*Мастабується пропорційно і заповнює собою блок */
+/* background-size: cover; */
+/* Универсальне значение */
+/*  background: колір фону або градієнт/ размір повтор*/
+background: rgb(226, 144, 144) url("..//img/foto-2.jpg") center / cover fixed; 
+/* Фіксація зображення*/
+/* background-attachment: fixed; */
+}
+
+
+
+.list {
+margin: 0px 0px 50px 0px;
+}
+
+ul > .item-list {
+	color: #7b7979;
+	font-weight: 700;
+	padding: 0px 0px 10px 60px; 
+}
+
+
+h2 {
+	font-size: 30px;
+	margin-bottom: 20px;
+	padding: 0px 0px 0px 15px;
+}
+
+/* ?????Чому по віый ширині */
+.background{
+	margin: 0px 0px 20px 0px;
+	padding: 15px;
+	line-height: 1.5;
+	color:rgba(255, 255, 255, 0.5);
+	background: rgba(253,120,255,1);
+}
+
+
+/* ?????Чому по віый ширині */
+.gradient {
+	margin: 0px 0px 30px 0px;
+	padding: 15px;
+	color: rgba(75, 93, 95, 0.3) ;
+	line-height: 1.5;
+	background-image: linear-gradient(
+		90deg,
+		rgba(247, 188, 188, 1) 0%,
+		rgba(158, 246, 255, 1) 53%,
+		rgba(255, 0, 138, 1) 100%
+	);
+}
+
+.background-block-repeat {
+	margin: 0px 0px 30px 0px;
+	min-height: 170px;
+	padding: 15px 15px 15px 315px;
+	color: #fbfbfb;
+	background-color: rgba(247, 188, 188, 1);
+	background-image: url("../img/foto-6.jpg");
+	background-repeat: no-repeat;
+}
+
+
+.background-patern {
+	margin: 0px 0px 30px 0px;
+	padding: 15px;
+	color: #9a9a9a;
+	background-image: url("../img/foto-pizza.jpg");
+	background-repeat: repeat-x;
+	/* Eще есть repeat-y, round, space*/
+}
+
+
+.background-position__container{
+	max-width: 1240px;
+   margin: 0 auto;
+	margin-bottom: 30px;
+	padding: 15px;
+	color: #704e4e;
+	background-color: rgb(255, 203, 143);
+	background-image: url("../img/foto-pizza-space.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	/* background-position: 50%; */
+	/* background-position: -10% 20%;
+		 background-position: 15px 25px; 
+		 background-position: top left; 
+		background-position: left; 
+		background-position: bottom right;*/
+}
+
+
+.block-size {
+	margin: 0px 0px 30px 0px;
+	padding: 15px 15px 15px 300px;
+	color: #595959;
+	text-align: justify;
+	line-height: 1.25;
+	background-color: rgb(253, 232, 253);
+	background-image: url("../img/foto-8-small.jpg");
+	background-repeat: no-repeat;
+	background-position: 15px 15px;
+	background-size: auto 200px;
+	/* background-size: auto 50%; */
+	/* 50% от ширины блока*/
+	/* background-size: contain; */
+	/*высота меньше ширины, поэтому картинка берет найменьший размер блок, в даном случаи по высоте */
+	/* background-size: contain; */
+	/*высота меньше ширины, поэтому картинка берет найменьший размер блок, в даном случаи по высоте */
+	/* background-size: cover;
+	background-position: center; */
+}
+
+
+
+.block-attachment{
+	margin: 0px 0px 30px 0px;
+	padding: 150px 150px 300px 150px;
+	line-height: 1.5;
+	color: #ffffff;
+	background-image: url("../img/foto-7.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	/* background-attachment: center; */
+	/* background-attachment: local; */
+}
+
+/* Универсальная запись */
+.block-universal {
+	margin: 0px 0px 100px 0px;
+	padding: 15px 20px 300px 20px;
+	color: rgb(255, 255, 255);
+	line-height: 1.25;
+ background: url("../img/foto-9.jpg") center/ cover no-repeat;
+ /* Использования мультикартинки */
+ /* background: url("../img/foto-4.jpg") center no-repeat, url("../img/foto-7.jpg") center / cover no-repeat; */
+}
+
+
+
+/* Зображення у списку */
+.item-list {
+/* Изображение меньше чем тект, регулируем позиционированием
+	background: url(../img/check.svg) 0 5px /10px no-repeat;
+	Изображение больше чем тект, регулируем позиционированием 
+	background: url(../img/check.svg) 15px 0 /25px no-repeat;
+	min-height: 25px;
+	padding: 0px 0px 0px 50px;
+	margin: 0px 0px 5px 0px; */
+
+/* Изображение меньше чем тект, регулируем позиционированием */
+	background: url("../img/check.svg") 0 0 /25px no-repeat;
+	padding: 5px 0px 5px 50px;
+	min-height: 25px;
+}
+
+
+.list-item-2{
+	background: url("../img/climate-foto.jpg") 0 10px/50px no-repeat;
+	padding: 5px 0px 15px 80px;
+	min-height: 40px;
+}
+
+
+/* !!!Створюю обмежуючий контейнер для section-2 */
+[class*="__container-2"] {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+.homework {
+	font-size: 18px;
+	font-style: italic;
+	opacity: 0.5;
+	margin: 0px 0px 30px 0px;
+	text-align: right;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 900;
+	text-align: center;
+	letter-spacing: 3px;
+	margin-bottom: 30px;
+}
+
+.patern-pizza {
+	margin: 0px 0px 30px 0px;
+	min-height: 150px;
+	color: #595959;
+	background-image: url("../img/italy-pattern.jpg");
+	background-repeat: repeat-x;
+}
+
+.item-italy {
+	text-align: justify;
+	line-height: 1.25;
+	/* font-size: 35px; */
+	/* Изображение меньше чем тект, регулируем позиционированием */
+	background: url(../img/item-italy.jfif) 15px 3px / 25px no-repeat;
+	/* Изображение больше чем тект, регулируем позиционированием */
+	padding: 0px 0px 10px 60px;
+}
+
+.subitem-italy {
+	text-align: justify;
+	padding: 10px 0px 0px 80px;
+	background: url(../img/foto-coliseum.jpg) 25px 15px/ 50px no-repeat;
+	/* Изображение больше чем тект, регулируем позиционированием */
+}
+
+.title-geography,
+.title-climate,
+.title-besttime,
+.title-attractions {
+	font-size: 35px;
+	margin: 0px 0px 30px 0px; 
+	padding-top: 30px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+.text-geography {
+	padding: 10px 0px 0px 300px;
+	text-align: justify;
+	color: #cecece;
+	line-height: 1.4;
+	/* Приклад */
+	background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(183, 82, 75, 0.729) 90%), url(../img/toscata-foto.jpg) 0 0 / contain no-repeat;
+}
+
+.geography{
+	margin-bottom: 30px;
+}
+
+.climate{
+	/* !!Експеримент */
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	padding: 50px;
+	background: url("../img/climate-foto.jpg") center no-repeat fixed;
+}
+.text-climate {
+	font-size: 25px;
+	color: #fbfbfb;
+	line-height: 1.4;
+}
+
+.text-besttime {
+	padding: 15px 50px 15px 780px; 
+	color: #575757;
+	text-align: justify;
+	line-height: 1.4;
+	background-color: #659797;
+	background-repeat: no-repeat;
+	background-image: url("../img/besttime.jpg");
+}
+
+
+.text-attractions,
+.text-attractions-1,
+.text-attractions-2,
+.text-attractions-3,
+.text-attractions-4 {
+	padding: 0px 15px 30px 15px;
+	color: #575757;
+	text-align: justify;
+	line-height: 1.4;
+}
+
+.text-attractions-1 {
+	margin: 0px 0px 30px 0px;
+	padding: 15px 500px 0px 15px; 
+	min-height: 400px;
+	text-align: left;
+	color: #ffffff;
+	line-height: 1.4;
+	background: #8c8cb2 url("../img/сoliseum-foto.jpg") center right no-repeat;
+}
+
+.text-attractions-2 {
+	margin: 0px 0px 30px 0px;
+	padding: 15px 15px 15px 500px;
+	min-height: 400px;
+	text-align: right;
+	color: #ffffff;
+	line-height: 1.4;
+	background: #426e89 url("../img/panteon-foto.jpg") 0 0 no-repeat;
+}
+
+.text-attractions-3 {
+	margin: 0px 0px 30px 0px;
+	padding: 15px 950px 15px 30px;
+	text-align: justify;
+	color: #ffffff;
+	line-height: 1.4;
+	background: #e8d0a4 url("../img/forum-foto.jpg") 100% 100% no-repeat;
+}
+
+.text-attractions-4 {
+	margin: 0px 0px 30px 0px;
+	padding: 40px 30px 15px 550px;
+	text-align: right;
+	color: #ffffff;
+	line-height: 1.4;
+	background: #dfcb8c url("../img/vatikan-foto.jpg") 50% no-repeat;
+}
+
+.title-rome,
+.title-venice,
+.title-venice,
+.title-florence,
+.title-milan,
+.title-napoli {
+	font-size: 50px;
+	font-weight: 700;
+	margin: 0px 0px 30px 0px; 
+	padding: 30px 0px 0px 0px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.text-rome {
+	padding: 50px 15px 50px 15px;
+	color: #f2f2f2;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/rome-foto.jpg") center no-repeat fixed;
+}
+
+.text-venice {
+	padding: 15px 15px 30px 700px;
+	color: #f8c0c0;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/venece-foto.jpg") 0 50% no-repeat local;
+}
+
+.text-florence {
+	padding: 15px 15px 15px 700px;
+	color: #8a8a8a;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/florence.jpg") 0 0 / contain no-repeat fixed;
+}
+
+.text-milan {
+	padding: 250px 15px 15px 500px;
+	color: #fffd79;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/milan.jpg") 0 0 / cover no-repeat;
+}
+
+.text-napoli {
+	padding: 0px 15px 0px 700px;
+	margin: 0px 0px 30px 0px;
+	color: #757575;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/napoli.jpg") top left/70% no-repeat;
+}
+
+.title-culinary {
+	font-size: 35px;
+	text-align: center;
+	font-weight: 400;
+	margin: 30px 0px;
+	letter-spacing: 2px;
+}
+
+.text-culinary {
+	padding: 50px;
+	color: #020202;
+	text-align: justify;
+	line-height: 1.4;
+	background: url("../img/food-4.jpg");
+}
+
+.maket-figma{
+	margin: 30px 0px;
+	padding: 20px 200px 20px 200px;
+	font-size: 35px;
+	text-align: center;
+	font-weight: 400;
+	letter-spacing: 2px;
+	background: radial-gradient(circle, rgba(255,187,231,1) 0%, rgba(98,136,255,1) 100%);
+
+}
